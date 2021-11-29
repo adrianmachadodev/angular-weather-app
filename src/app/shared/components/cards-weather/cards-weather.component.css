@@ -1,0 +1,39 @@
+.cards-weather {
+
+
+  height: 100vh;
+  gap: 10px;
+
+  /* Grid */
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: 100px;
+}
+
+.cards-weather .card-info {
+  background-color: #fff;
+  width: 100%;
+  border: 1px solid grey;
+  box-shadow: 0 3px 10px rgb(0 0 0 / 0.5);
+  text-align: center;
+  justify-self: center;
+
+  /* Grid */
+  display: flex;
+  flex-direction: column;
+}
+
+.card-info .title-city {
+  /* background-color: blue; */
+  height: 3rem;
+}
+
+.card-info .temp-zone {
+  /* background-color: red; */
+  height: 3rem;
+}
+
+.card-info .cloud {
+  /* background-color: green; */
+  height: 3rem;
+}

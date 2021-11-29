@@ -1,0 +1,47 @@
+<div class="login">
+  <form action="loginn">
+    <h1>Login</h1>
+    <div class="container">
+      <label for="Email"
+        ><b [ngStyle]="{ 'font-size': '16px' }">Email <span>*</span></b></label
+      >
+      <input
+        type="text"
+        placeholder="you@example.com"
+        [ngStyle]="{ 'font-size': '15px' }"
+        requerid
+      />
+
+      <label for="pass"
+        ><b [ngStyle]="{ 'font-size': '16px' }"
+          >Password <span>*</span></b
+        ></label
+      >
+      <input
+        type="pass"
+        placeholder=" Enter password"
+        [ngStyle]="{ 'font-size': '15px' }"
+        required
+      />
+
+      <label class="rem" [ngStyle]="{ 'font-size': '17px' }"
+        ><input type="checkbox" /> Remember me
+      </label>
+
+      <button [ngStyle]="{ 'font-size': '17px' }">Sign in</button>
+      <div class="separator"></div>
+
+      <div class="container2">
+        <div class="facebook"><i class="uil uil-facebook-f"></i>Facebook</div>
+        <div class="google"><i class="uil uil-google"></i>Google</div>
+      </div>
+
+      <div class="member">
+        Not a member?
+        <span [routerLink]="['/login']" routerLinkActive="router-link-active"
+          >Signup now</span
+        >
+      </div>
+    </div>
+  </form>
+</div>

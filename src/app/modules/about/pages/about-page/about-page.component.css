@@ -1,0 +1,13 @@
+.about-app {
+  background-color: beige;
+  height: 20rem;
+
+  /* Grid */
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.about-app .text-about {
+  background-color: cadetblue;
+  grid-column: 2/4;
+}

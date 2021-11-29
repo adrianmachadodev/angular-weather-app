@@ -1,0 +1,9 @@
+.search-component {
+  background-color: blue;
+}
+
+.container .search input {
+  border: 0;
+  border-inline: none;
+  border-radius: 10px;
+}
