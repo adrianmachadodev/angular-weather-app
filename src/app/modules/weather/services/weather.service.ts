@@ -13,19 +13,11 @@ export class WeatherService {
 
   constructor(private http: HttpClient) {}
 
-  private skipId(
-    listWeather: WeatherModel[],
-    id: number
-  ): Promise<WeatherModel[]> {
-    return new Promise((resolve, reject) => {
-      const listWthr = listWeather.filter((a) => a.id !== id);
-      resolve(listWthr);
-    });
-  }
-
-  getAllRandom$(): Observable<any> {
-    return this.http.get(`${this.URL}`).pipe(mergeMap({ data }:any)=>{
-      return data
-    });
+  getAllData$(): Observable<any> {
+    return this.http.get(`${this.URL}`).pipe(
+      map(({ data }: any) => {
+        return data;
+      })
+    );
   }
 }

@@ -1,18 +1,19 @@
 .cards-weather {
-
-
   height: 100vh;
   gap: 10px;
 
   /* Grid */
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  grid-template-rows: 100px;
+  grid-template-columns: repeat(1, 1fr);
+  grid-template-rows: 300px;
+  justify-items: center;
+  align-content: center;
 }
 
 .cards-weather .card-info {
   background-color: #fff;
-  width: 100%;
+
+  width: 30%;
   border: 1px solid grey;
   box-shadow: 0 3px 10px rgb(0 0 0 / 0.5);
   text-align: center;
@@ -26,14 +27,17 @@
 .card-info .title-city {
   /* background-color: blue; */
   height: 3rem;
+  padding: 1rem;
 }
 
 .card-info .temp-zone {
   /* background-color: red; */
   height: 3rem;
+  padding: 1rem;
 }
 
 .card-info .cloud {
   /* background-color: green; */
   height: 3rem;
+  padding: 1rem;
 }

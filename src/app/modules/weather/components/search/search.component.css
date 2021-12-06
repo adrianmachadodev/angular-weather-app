@@ -1,9 +1,37 @@
 .search-component {
-  background-color: blue;
+  /* background-color: blue; */
+
+  /* Grid */
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: 50px;
 }
 
-.container .search input {
+.search-component input {
   border: 0;
-  border-inline: none;
-  border-radius: 10px;
+  width: 30%;
+  border-radius: 5px;
+  margin-top: 1rem;
+  outline: none;
+  border: 1px solid black;
+
+  justify-self: end;
+}
+
+button {
+  width: 15%;
+  height: 1.5rem;
+
+  align-self: flex-end;
+  border: 0;
+  border-radius: 5px;
+  margin-left: 3rem;
+}
+
+button:hover {
+  opacity: 0.8;
+}
+
+button:active {
+  background-color: lightblue;
 }
