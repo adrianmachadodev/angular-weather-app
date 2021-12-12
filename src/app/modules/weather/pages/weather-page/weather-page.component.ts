@@ -1,5 +1,4 @@
 import { Component, OnInit } from '@angular/core';
-import { WeatherService } from '@modules/weather/services/weather.service';
 
 @Component({
   selector: 'app-weather-page',
@@ -7,9 +6,9 @@ import { WeatherService } from '@modules/weather/services/weather.service';
   styleUrls: ['./weather-page.component.css'],
 })
 export class WeatherPageComponent implements OnInit {
-  constructor(private weatherService: WeatherService) {}
+  weather: any;
 
-  ngOnInit(): void {
-    this.weatherService.getAllData$;
-  }
+  constructor() {}
+
+  ngOnInit(): void {}
 }

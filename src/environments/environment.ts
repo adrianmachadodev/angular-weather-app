@@ -4,7 +4,7 @@
 
 export const environment = {
   production: false,
-  api: `api.openweathermap.org/data/2.5/weather?q={city name}&appid=f4a8b6dd675f4d6e6644665489755b99`,
+  api: `http://api.openweathermap.org/data/2.5/forecast?&appid=f4a8b6dd675f4d6e6644665489755b99&q=`,
 };
 
 /*

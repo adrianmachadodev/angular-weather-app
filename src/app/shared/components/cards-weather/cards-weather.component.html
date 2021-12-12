@@ -1,8 +1,23 @@
 <div class="cards-weather">
-  <div class="card-info">
-    <div class="title-city">Holanda</div>
-    <div class="temp-zone">23°</div>
-    <div class="cloud">Vientos del sur</div>
+  <div class="search">
+    <form (submit)="submitLocation(cityName)">
+      <input type="text" placeholder="Search city" #cityName />
+      <button><i class="uil uil-search"></i></button>
+    </form>
   </div>
-
+  <div class="results-card">
+    <div *ngIf="weather" class="card-descript">
+      <p>City: {{ weather.city.name }}</p>
+      <hr />
+      <p>Temperature: {{ weather.list[0].main.temp }}</p>
+      <hr />
+      <p>Humidity: {{ weather.list[0].main.humidity }}</p>
+      <hr />
+      <p>Temp-Max: {{ weather.list[0].main.temp_max }}</p>
+      <hr />
+      <p>Description: {{ weather.list[0].weather[0].description }}</p>
+    </div>
+  </div>
 </div>
+
+<!-- *ngIf="weather" -->

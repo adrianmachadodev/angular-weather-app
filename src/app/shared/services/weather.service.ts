@@ -13,11 +13,7 @@ export class WeatherService {
 
   constructor(private http: HttpClient) {}
 
-  getAllData$(): Observable<any> {
-    return this.http.get(`${this.URL}`).pipe(
-      map(({ data }: any) => {
-        return data;
-      })
-    );
+  getData(cityName: string) {
+    return this.http.get(`${this.URL}${cityName}`);
   }
 }
