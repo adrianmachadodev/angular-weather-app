@@ -33,6 +33,10 @@
   flex-direction: column;
 }
 
+form .log {
+  margin-top: 10px;
+}
+
 form .container {
   /* background-color: aquamarine; */
   width: 80%;
@@ -96,30 +100,6 @@ button:hover {
   display: flex;
   flex-direction: row;
   gap: 10px;
-}
-
-.container2 .facebook {
-  background-color: none;
-  width: 50%;
-  border: 1px solid blue;
-  color: blue;
-  border-radius: 10px;
-  cursor: pointer;
-  height: 2rem;
-  text-align: center;
-  line-height: 2rem;
-}
-
-.container2 .google {
-  background-color: none;
-  width: 50%;
-  border: 1px solid orangered;
-  color: orangered;
-  border-radius: 10px;
-  cursor: pointer;
-  height: 2rem;
-  text-align: center;
-  line-height: 2rem;
 }
 
 .member {

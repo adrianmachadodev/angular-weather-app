@@ -1,13 +1,27 @@
 .about-app {
   background-color: beige;
-  height: 20rem;
+  min-height: 100vh;
 
   /* Grid */
   display: grid;
   grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: 60px 100px;
+}
+
+.about-app .title {
+  background-color: lightslategray;
+  grid-column: span 5;
+  text-align: center;
+  line-height: 3rem;
+  color: #fff;
 }
 
 .about-app .text-about {
-  background-color: cadetblue;
+  /* background-color: cadetblue; */
+  margin-top: 30px;
   grid-column: 2/4;
+  height: 20rem;
+
+  display: flex;
+  flex-direction: column;
 }
