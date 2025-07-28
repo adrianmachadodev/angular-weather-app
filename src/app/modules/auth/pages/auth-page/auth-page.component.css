@@ -55,6 +55,7 @@ input[type="password"] {
   margin: 4px 0;
   display: inline-block;
   border: 1px solid #ccc;
+  outline: none;
   border-radius: 7px;
   box-sizing: border-box;
 }

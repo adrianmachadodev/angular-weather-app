@@ -1,20 +1,16 @@
-<div class="header-nav">
-  <div class="name-app"><i class="uil uil-cloud-sun"></i>Weather App</div>
-  <ul class="navbar-list">
-    <li
-      [routerLink]="item.router"
-      [queryParams]="item.query"
-      *ngFor="let item of mainMenu.defaultOptions"
-    >
-      <div class="wrapper-item">
-        <i
-          [ngClass]="['uil', item.icon]"
-          [ngStyle]="{ 'font-size': '17px' }"
-        ></i>
-        <span class="list-label" [ngStyle]="{ 'font-size': '17px' }">{{
-          item.name
-        }}</span>
-      </div>
-    </li>
-  </ul>
-</div>
+<header>
+  <div class="wrapper-navbar">
+    <div class="logo-app">
+      <i class="uil uil-cloud-sun"></i>
+      Weather App
+    </div>
+    <ul class="list-group">
+      <li class="item-list" *ngFor="let link of mainMenu.defaultOptions">
+        <a href="#">
+          <i class="{{link.icon}}"></i>
+          {{link.name}}
+        </a>
+      </li>
+    </ul>
+  </div>
+</header>

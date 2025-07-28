@@ -1,0 +1,19 @@
+<footer>
+  <div class="wrapper">
+    <div class="wrapper__social">
+      <ul class="wrapper-list" *ngFor="let item of listSocial">
+        <li class="list-item">
+          <a [href]="item.url" target="_blank">
+            <i [class]="item.icon"></i>
+          </a>
+        </li>
+      </ul>
+    </div>
+    <div class="wrapper__designed">
+      <span>Designed © adrianmachado. </span>
+    </div>
+    <div class="wrapper__logo">
+        <img src="../../../../assets/personal-logo/logo-adrian.webp" alt="logo">
+    </div>
+  </div>
+</footer>

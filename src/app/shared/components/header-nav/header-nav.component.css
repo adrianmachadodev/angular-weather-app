@@ -1,44 +1,62 @@
-.header-nav {
-  background-color: black;
+header {
+  background-color: hsl(0, 0%, 5%);
   width: 100%;
-  height: 65px;
-
-  /* Grid */
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-}
-
-.header-nav .name-app {
-  color: #fff;
-  justify-self: center;
-  align-self: center;
-}
-
-.header-nav .navbar-list {
-  /* background-color: aquamarine; */
-  grid-column: 3/4;
-  line-height: 3rem;
   height: 3rem;
-  list-style: none;
-  color: #fff;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  border-bottom: 1px solid rgba(128, 128, 128, 0.226);
 }
 
-ul {
+.wrapper-navbar {
+  /* background-color: antiquewhite; */
+  width: 90%;
+  height: 3rem;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.wrapper-navbar .logo-app {
+  /* background-color: beige; */
+  /* width: 10rem; */
+  height: 3rem;
+  line-height: 3rem;
+  font-family: "Inter";
+  color: white;
+}
+
+.wrapper-navbar .list-group {
+  /* background-color:burlywood; */
+  width: 20rem;
+  height: 4rem;
   display: table;
-  text-align: center;
-  align-self: center;
-  margin-right: 2rem;
+  padding: 0;
+  border-collapse: separate;
 }
 
-ul li {
+.list-group .item-list {
+  /* background-color: aqua; */
   display: table-cell;
-  cursor: pointer;
+  list-style-type: none;
+  text-align: center;
 }
 
-ul li:hover {
-  border-bottom: 1px solid red;
+.item-list a {
+  /* background-color: cadetblue; */
+  display: inline-block;
+  width: 5rem;
+  height: 3rem;
+  font-size: 14px;
+  line-height: 3rem;
+  text-decoration: none;
+  color: white;
+  font-family: "Inter thin";
 }
 
-ul li:active {
-  border-bottom: 1px solid red;
+.item-list a:hover {
+  border-bottom: 1px solid rgb(88, 88, 88);
+  transition-duration: 0.2ms;
 }
