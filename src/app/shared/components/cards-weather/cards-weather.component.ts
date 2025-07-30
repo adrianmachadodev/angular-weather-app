@@ -8,12 +8,11 @@ import { WeatherService } from '@shared/services/weather.service';
 })
 export class CardsWeatherComponent implements OnInit {
   weathers: any;
-  icon:any;
+  icon: any;
 
   constructor(private weatherService: WeatherService) {}
 
-  ngOnInit(): void {
-  }
+  ngOnInit(): void {}
 
   getWeather(cityName: string) {
     this.weatherService.getData(cityName).subscribe(
@@ -29,11 +28,11 @@ export class CardsWeatherComponent implements OnInit {
     return false;
   }
 
-  getIconsWeather(icon:string):void{
+  getIconsWeather(icon: string): void {
     const iconWeather = icon;
     console.log('iconWeather', iconWeather);
-    this.weatherService.getIconsWeather(iconWeather).subscribe((res:any) =>{
+    this.weatherService.getIconsWeather(iconWeather).subscribe((res: any) => {
       this.icon = res;
-    })
+    });
   }
 }

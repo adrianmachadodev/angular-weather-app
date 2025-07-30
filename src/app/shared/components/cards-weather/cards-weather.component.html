@@ -12,7 +12,7 @@
   </div>
 
   <section class="section-card">
-    <app-card-main></app-card-main>
+    <app-card-main *ngIf="weathers, else message" [weathers]="weathers"></app-card-main>
   </section>
 
   <ng-template #message

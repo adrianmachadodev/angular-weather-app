@@ -7,23 +7,28 @@
   flex-direction: column;
   flex-wrap: wrap;
   border: 1px solid rgb(37, 37, 37);
-
+  color: white;
+  margin-top: 10px;
+  text-align: center;
 }
 
 .card .weather-title{
-  background-color: aquamarine;
+  /* background-color: aquamarine; */
   width: 100%;
   height: 2rem;
+  line-height: 2rem;
 }
 
 .card .weather-subtitle{
-  background-color:brown;
+  /* background-color:brown; */
   width: 100%;
   height: 2rem;
+  line-height: 2rem;
+
 }
 
 .card .info-card{
-  background-color: cadetblue;
+  /* background-color: cadetblue; */
   width: 100%;
   height: 10rem;
   display: flex;
@@ -34,13 +39,15 @@
 }
 
 .info-card .info-temperature{
-  background-color: burlywood;
+  /* background-color: burlywood; */
   width: 80px;
   height: 80px;
+  text-align: center;
+  line-height: 80px;
 }
 
 .info-card .temperature-levels{
-  background-color:chartreuse;
+  /* background-color:chartreuse; */
   width: 100%;
   height: 3rem;
   display: flex;
@@ -51,13 +58,19 @@
 
 .temperature-levels .temp-max{
   /* background-color: chocolate; */
-  width: 8rem;
+  width: 5rem;
   height: 3rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .temperature-levels .temp-min{
   /* background-color: red; */
-  width: 8rem;
+  width: 5rem;
   height: 3rem;
   border-left: 1px solid white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }

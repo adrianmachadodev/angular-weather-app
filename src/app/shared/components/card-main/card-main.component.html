@@ -1,11 +1,33 @@
 <div class="card">
-  <div class="weather-title"></div>
-  <div class="weather-subtitle"></div>
+  <div class="weather-title">
+    <h2>
+      {{weathers.city.name}}
+    </h2>
+  </div>
+  <div class="weather-subtitle">
+    <span>
+      {{weathers.list[0].weather[0].description}}
+    </span>
+  </div>
   <div class="info-card">
-    <div class="info-temperature"></div>
+    <div class="info-temperature">
+      <span>
+        {{weathers.list[0].main.temp}} °
+      </span>
+    </div>
     <div class="temperature-levels">
-      <div class="temp-max"></div>
-      <div class="temp-min"></div>
+      <div class="temp-max">
+        <span>Max</span>
+        <span>
+        {{weathers.list[0].main.temp_max}} °
+      </span>
+      </div>
+      <div class="temp-min">
+         <span>Min</span>
+        <span>
+        {{weathers.list[0].main.temp_min}} °
+      </span>
+      </div>
     </div>
   </div>
 </div>

@@ -36,7 +36,9 @@ form .input-form {
   background-color: gray;
   transition: all 0.4s ease;
   animation-duration: 1s;
+  transform: rotate(40deg);
 }
+
 
 .section-card{
   width: 100%;

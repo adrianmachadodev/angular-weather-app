@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-card-main',
@@ -6,10 +6,12 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./card-main.component.css']
 })
 export class CardMainComponent implements OnInit {
+  @Input() weathers:any;
 
   constructor() { }
 
   ngOnInit(): void {
+    console.log('weathers -> child', this.weathers);
   }
 
 }
